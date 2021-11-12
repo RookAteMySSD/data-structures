@@ -25,7 +25,7 @@ stackMethods.push = function(value) {
 stackMethods.pop = function() {
   let CurrentIndex = -1;
   for (var key in this.storage) {
-    if (CurrentIndex === -1 || key > CurrentIndex) {
+    if (key > CurrentIndex) {
       CurrentIndex = key;
     }
   }

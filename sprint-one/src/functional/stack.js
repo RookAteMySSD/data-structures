@@ -12,7 +12,7 @@ var Stack = function() {
 
   someInstance.pop = function() {
     let CurrentIndex = someInstance.size() - 1;
-    var tempValue = storage[CurrentIndex];
+    let tempValue = storage[CurrentIndex];
     delete storage[CurrentIndex];
     return tempValue;
   };
