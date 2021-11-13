@@ -7,11 +7,11 @@ var Set = function() {
 var setPrototype = {};
 
 setPrototype.add = function(item) {
-  this[item] = {};
+  this._storage[item] = {};
 };
 
 setPrototype.contains = function(item) {
-  if (this[item]) {
+  if (this._storage[item]) {
     return true;
   } else {
     return false;
@@ -19,7 +19,7 @@ setPrototype.contains = function(item) {
 };
 
 setPrototype.remove = function(item) {
-  delete this[item];
+  delete this._storage[item];
 };
 
 /*
